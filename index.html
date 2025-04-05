@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nothing Shop</title>
+  <style>
+    body { font-family: sans-serif;
+         margin: 0;
+         }
+         selector {
+  background-image: url('c:\Users\Lenovo\Downloads\download.jpegimage.jpg');
+}
+
+    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    .products { display: flex; justify-content: center; gap: 20px; padding: 2em; flex-wrap: wrap; }
+    .product { border: 1px solid #ccc; padding: 1em; width: 150px; text-align: center; border-radius: 8px; }
+    .product img { width: 100%; border-radius: 8px; }
+    button { background: green; color: white; border: none; padding: 5px 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Try Your Best</h1>
+    <h2>Try to GET the Product</h2>
+    <nav><a href="#">Home</a><a href="#">Shop</a><a href="#">Cart</a></nav>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h3>Product 1</h3>
+      <p>$10</p>
+      <button onclick="addToCart('Product 1')">Add</button>
+    </div>
+    <div class="product">
+      <h3>Product 2</h3>
+      <p>$15</p>
+      <button onclick="addToCart('Product 2')">Add</button>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 Mini eShop</footer>
+
+  <script>
+    function addToCart(name) {
+      alert(name + " added to cart!");
+    }
+  </script>
+
+</body>
+</html>
